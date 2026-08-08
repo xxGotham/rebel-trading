@@ -1,0 +1,128 @@
+symbol,name,sector,sectorEtf,exchange,isBenchmark
+SPY,SPDR S&P 500 ETF Trust,Index,SPY,NYSE,true
+QQQ,Invesco QQQ Trust,Index,QQQ,NASDAQ,true
+XLK,Technology Select Sector SPDR,Technology,XLK,NYSE,true
+XLC,Communication Services Select Sector SPDR,Communication Services,XLC,NYSE,true
+XLY,Consumer Discretionary Select Sector SPDR,Consumer Discretionary,XLY,NYSE,true
+XLP,Consumer Staples Select Sector SPDR,Consumer Staples,XLP,NYSE,true
+XLF,Financial Select Sector SPDR,Financials,XLF,NYSE,true
+XLV,Health Care Select Sector SPDR,Health Care,XLV,NYSE,true
+XLI,Industrial Select Sector SPDR,Industrials,XLI,NYSE,true
+XLE,Energy Select Sector SPDR,Energy,XLE,NYSE,true
+XLB,Materials Select Sector SPDR,Materials,XLB,NYSE,true
+XLU,Utilities Select Sector SPDR,Utilities,XLU,NYSE,true
+XLRE,Real Estate Select Sector SPDR,Real Estate,XLRE,NYSE,true
+AAPL,Apple Inc.,Technology,XLK,NASDAQ,false
+MSFT,Microsoft Corporation,Technology,XLK,NASDAQ,false
+NVDA,NVIDIA Corporation,Technology,XLK,NASDAQ,false
+AVGO,Broadcom Inc.,Technology,XLK,NASDAQ,false
+AMD,Advanced Micro Devices,Technology,XLK,NASDAQ,false
+INTC,Intel Corporation,Technology,XLK,NASDAQ,false
+QCOM,QUALCOMM Incorporated,Technology,XLK,NASDAQ,false
+TXN,Texas Instruments,Technology,XLK,NASDAQ,false
+MU,Micron Technology,Technology,XLK,NASDAQ,false
+AMAT,Applied Materials,Technology,XLK,NASDAQ,false
+LRCX,Lam Research,Technology,XLK,NASDAQ,false
+KLAC,KLA Corporation,Technology,XLK,NASDAQ,false
+ADI,Analog Devices,Technology,XLK,NASDAQ,false
+CRM,Salesforce Inc.,Technology,XLK,NYSE,false
+ORCL,Oracle Corporation,Technology,XLK,NYSE,false
+ADBE,Adobe Inc.,Technology,XLK,NASDAQ,false
+NOW,ServiceNow Inc.,Technology,XLK,NYSE,false
+PANW,Palo Alto Networks,Technology,XLK,NASDAQ,false
+CRWD,CrowdStrike Holdings,Technology,XLK,NASDAQ,false
+SNPS,Synopsys Inc.,Technology,XLK,NASDAQ,false
+CDNS,Cadence Design Systems,Technology,XLK,NASDAQ,false
+ANET,Arista Networks,Technology,XLK,NYSE,false
+DELL,Dell Technologies,Technology,XLK,NYSE,false
+HPQ,HP Inc.,Technology,XLK,NYSE,false
+IBM,International Business Machines,Technology,XLK,NYSE,false
+ACN,Accenture plc,Technology,XLK,NYSE,false
+GOOGL,Alphabet Inc. Class A,Communication Services,XLC,NASDAQ,false
+META,Meta Platforms Inc.,Communication Services,XLC,NASDAQ,false
+NFLX,Netflix Inc.,Communication Services,XLC,NASDAQ,false
+DIS,Walt Disney Company,Communication Services,XLC,NYSE,false
+CMCSA,Comcast Corporation,Communication Services,XLC,NASDAQ,false
+T,AT&T Inc.,Communication Services,XLC,NYSE,false
+VZ,Verizon Communications,Communication Services,XLC,NYSE,false
+TMUS,T-Mobile US Inc.,Communication Services,XLC,NASDAQ,false
+EA,Electronic Arts Inc.,Communication Services,XLC,NASDAQ,false
+WBD,Warner Bros. Discovery,Communication Services,XLC,NASDAQ,false
+AMZN,Amazon.com Inc.,Consumer Discretionary,XLY,NASDAQ,false
+TSLA,Tesla Inc.,Consumer Discretionary,XLY,NASDAQ,false
+HD,Home Depot Inc.,Consumer Discretionary,XLY,NYSE,false
+MCD,McDonald's Corporation,Consumer Discretionary,XLY,NYSE,false
+NKE,NIKE Inc.,Consumer Discretionary,XLY,NYSE,false
+SBUX,Starbucks Corporation,Consumer Discretionary,XLY,NASDAQ,false
+LOW,Lowe's Companies,Consumer Discretionary,XLY,NYSE,false
+BKNG,Booking Holdings Inc.,Consumer Discretionary,XLY,NASDAQ,false
+TJX,TJX Companies Inc.,Consumer Discretionary,XLY,NYSE,false
+GM,General Motors Company,Consumer Discretionary,XLY,NYSE,false
+F,Ford Motor Company,Consumer Discretionary,XLY,NYSE,false
+ABNB,Airbnb Inc.,Consumer Discretionary,XLY,NASDAQ,false
+CMG,Chipotle Mexican Grill,Consumer Discretionary,XLY,NYSE,false
+MAR,Marriott International,Consumer Discretionary,XLY,NASDAQ,false
+WMT,Walmart Inc.,Consumer Staples,XLP,NYSE,false
+COST,Costco Wholesale Corporation,Consumer Staples,XLP,NASDAQ,false
+PG,Procter & Gamble Company,Consumer Staples,XLP,NYSE,false
+KO,Coca-Cola Company,Consumer Staples,XLP,NYSE,false
+PEP,PepsiCo Inc.,Consumer Staples,XLP,NASDAQ,false
+PM,Philip Morris International,Consumer Staples,XLP,NYSE,false
+MO,Altria Group Inc.,Consumer Staples,XLP,NYSE,false
+MDLZ,Mondelez International,Consumer Staples,XLP,NASDAQ,false
+CL,Colgate-Palmolive Company,Consumer Staples,XLP,NYSE,false
+TGT,Target Corporation,Consumer Staples,XLP,NYSE,false
+JPM,JPMorgan Chase & Co.,Financials,XLF,NYSE,false
+BAC,Bank of America Corporation,Financials,XLF,NYSE,false
+WFC,Wells Fargo & Company,Financials,XLF,NYSE,false
+GS,Goldman Sachs Group Inc.,Financials,XLF,NYSE,false
+MS,Morgan Stanley,Financials,XLF,NYSE,false
+C,Citigroup Inc.,Financials,XLF,NYSE,false
+SCHW,Charles Schwab Corporation,Financials,XLF,NYSE,false
+BLK,BlackRock Inc.,Financials,XLF,NYSE,false
+AXP,American Express Company,Financials,XLF,NYSE,false
+SPGI,S&P Global Inc.,Financials,XLF,NYSE,false
+COF,Capital One Financial,Financials,XLF,NYSE,false
+PYPL,PayPal Holdings Inc.,Financials,XLF,NASDAQ,false
+UNH,UnitedHealth Group Inc.,Health Care,XLV,NYSE,false
+JNJ,Johnson & Johnson,Health Care,XLV,NYSE,false
+LLY,Eli Lilly and Company,Health Care,XLV,NYSE,false
+PFE,Pfizer Inc.,Health Care,XLV,NYSE,false
+ABBV,AbbVie Inc.,Health Care,XLV,NYSE,false
+MRK,Merck & Co. Inc.,Health Care,XLV,NYSE,false
+TMO,Thermo Fisher Scientific,Health Care,XLV,NYSE,false
+ABT,Abbott Laboratories,Health Care,XLV,NYSE,false
+AMGN,Amgen Inc.,Health Care,XLV,NASDAQ,false
+GILD,Gilead Sciences Inc.,Health Care,XLV,NASDAQ,false
+CVS,CVS Health Corporation,Health Care,XLV,NYSE,false
+BMY,Bristol-Myers Squibb,Health Care,XLV,NYSE,false
+ISRG,Intuitive Surgical Inc.,Health Care,XLV,NASDAQ,false
+VRTX,Vertex Pharmaceuticals,Health Care,XLV,NASDAQ,false
+CAT,Caterpillar Inc.,Industrials,XLI,NYSE,false
+BA,Boeing Company,Industrials,XLI,NYSE,false
+GE,GE Aerospace,Industrials,XLI,NYSE,false
+HON,Honeywell International,Industrials,XLI,NASDAQ,false
+UPS,United Parcel Service,Industrials,XLI,NYSE,false
+RTX,RTX Corporation,Industrials,XLI,NYSE,false
+LMT,Lockheed Martin Corporation,Industrials,XLI,NYSE,false
+DE,Deere & Company,Industrials,XLI,NYSE,false
+UNP,Union Pacific Corporation,Industrials,XLI,NYSE,false
+MMM,3M Company,Industrials,XLI,NYSE,false
+FDX,FedEx Corporation,Industrials,XLI,NYSE,false
+XOM,Exxon Mobil Corporation,Energy,XLE,NYSE,false
+CVX,Chevron Corporation,Energy,XLE,NYSE,false
+COP,ConocoPhillips,Energy,XLE,NYSE,false
+SLB,Schlumberger Limited,Energy,XLE,NYSE,false
+EOG,EOG Resources Inc.,Energy,XLE,NYSE,false
+MPC,Marathon Petroleum Corporation,Energy,XLE,NYSE,false
+PSX,Phillips 66,Energy,XLE,NYSE,false
+OXY,Occidental Petroleum,Energy,XLE,NYSE,false
+LIN,Linde plc,Materials,XLB,NASDAQ,false
+FCX,Freeport-McMoRan Inc.,Materials,XLB,NYSE,false
+NEM,Newmont Corporation,Materials,XLB,NYSE,false
+DOW,Dow Inc.,Materials,XLB,NYSE,false
+NEE,NextEra Energy Inc.,Utilities,XLU,NYSE,false
+DUK,Duke Energy Corporation,Utilities,XLU,NYSE,false
+SO,Southern Company,Utilities,XLU,NYSE,false
+AMT,American Tower Corporation,Real Estate,XLRE,NYSE,false
+PLD,Prologis Inc.,Real Estate,XLRE,NYSE,false

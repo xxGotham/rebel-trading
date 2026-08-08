@@ -1,0 +1,27 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+artifacts/
+
+# Local data
+*.db
+*.db-shm
+*.db-wal
+rebel.db*
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Env / secrets
+.env
+.env.local
+*.local.json
+
+# OS
+Thumbs.db
+.DS_Store

@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: rebel-postgres
+    environment:
+      POSTGRES_USER: rebel
+      POSTGRES_PASSWORD: rebel
+      POSTGRES_DB: rebel
+    ports:
+      - '5432:5432'
+    volumes:
+      - rebel-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      # The API migrates on startup, so it must not connect before Postgres is ready.
+      test: ['CMD-SHELL', 'pg_isready -U rebel -d rebel']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  rebel-pgdata:
