@@ -29,7 +29,7 @@ public static class AuthEndpoints
         if (await users.FindByEmailAsync(req.Email) != null)
             return Results.Conflict(new { message = "Email already registered." });
 
-        var user = new ApplicationUser { UserName = req.Email, Email = req.Email, DisplayName = req.Username };
+        var user = new ApplicationUser { UserName = req.Email, Email = req.Email, DisplayName = req.DisplayName };
         var result = await users.CreateAsync(user, req.Password);
         if (!result.Succeeded)
             return Results.BadRequest(new { message = string.Join("; ", result.Errors.Select(e => e.Description)) });

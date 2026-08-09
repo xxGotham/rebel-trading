@@ -1,7 +1,7 @@
 namespace Rebel.Api.Contracts;
 
 public record LoginRequest(string Email, string Password);
-public record RegisterRequest(string Email, string Username, string Password);
+public record RegisterRequest(string Email, string DisplayName, string Password);
 public record RefreshRequest(string RefreshToken);
 public record ForgotPasswordRequest(string Email);
 

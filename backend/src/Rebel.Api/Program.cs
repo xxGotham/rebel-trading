@@ -20,10 +20,13 @@ var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
 if (!string.IsNullOrEmpty(databaseUrl))
 {
     var uri = new Uri(databaseUrl);
-    var userInfo = uri.UserInfo.Split(':');
+    // Split on first colon only — passwords can contain colons
+    var userInfo = uri.UserInfo.Split(':', 2);
+    var username = Uri.UnescapeDataString(userInfo[0]);
+    var password = userInfo.Length > 1 ? Uri.UnescapeDataString(userInfo[1]) : "";
     builder.Configuration["ConnectionStrings:Default"] =
         $"Host={uri.Host};Port={uri.Port};Database={uri.AbsolutePath.TrimStart('/')}" +
-        $";Username={userInfo[0]};Password={Uri.UnescapeDataString(userInfo[1])}" +
+        $";Username={username};Password={password}" +
         $";SSL Mode=Require;Trust Server Certificate=true";
 }
 
