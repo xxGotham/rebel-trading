@@ -11,10 +11,11 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.rebeltrading.mobile",
+      "bundleIdentifier": "co.rebeltrading.aitradecoach",
       "infoPlist": {
         "NSMicrophoneUsageDescription": "Rebel uses your microphone so you can ask questions by voice while trading.",
-        "NSSpeechRecognitionUsageDescription": "Rebel uses speech recognition to understand your voice questions."
+        "NSSpeechRecognitionUsageDescription": "Rebel uses speech recognition to understand your voice questions.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -22,7 +23,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#0A0A0F"
       },
-      "package": "com.rebeltrading.mobile",
+      "package": "co.rebeltrading.aitradecoach",
       "permissions": [
         "android.permission.RECORD_AUDIO",
         "android.permission.MODIFY_AUDIO_SETTINGS"
