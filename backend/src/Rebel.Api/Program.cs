@@ -82,12 +82,29 @@ builder.Services.AddSingleton<ICoachingSessionService>(sp =>
 
 var app = builder.Build();
 
-// Create schema on startup
-using (var scope = app.Services.CreateScope())
+// Initialize schema in the background so the health check can pass immediately.
+// Retries with backoff in case the DB container isn't ready yet.
+_ = Task.Run(async () =>
 {
+    using var scope = app.Services.CreateScope();
     var db = scope.ServiceProvider.GetRequiredService<RebelDbContext>();
-    db.Database.EnsureCreated();
-}
+    var log = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+    for (var attempt = 1; attempt <= 10; attempt++)
+    {
+        try
+        {
+            await db.Database.EnsureCreatedAsync();
+            log.LogInformation("Database ready.");
+            return;
+        }
+        catch (Exception ex)
+        {
+            log.LogWarning("DB not ready (attempt {Attempt}/10): {Msg}", attempt, ex.Message);
+            await Task.Delay(TimeSpan.FromSeconds(attempt * 3));
+        }
+    }
+    log.LogError("Database failed to initialize after 10 attempts.");
+});
 
 if (app.Environment.IsDevelopment())
     app.MapOpenApi();
