@@ -10,6 +10,23 @@ using Rebel.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Railway injects PORT; default to 8080 for local Docker runs
+var port = Environment.GetEnvironmentVariable("PORT");
+if (!string.IsNullOrEmpty(port))
+    builder.WebHost.UseUrls($"http://+:{port}");
+
+// Railway injects DATABASE_URL (postgresql://user:pass@host:port/db)
+var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+if (!string.IsNullOrEmpty(databaseUrl))
+{
+    var uri = new Uri(databaseUrl);
+    var userInfo = uri.UserInfo.Split(':');
+    builder.Configuration["ConnectionStrings:Default"] =
+        $"Host={uri.Host};Port={uri.Port};Database={uri.AbsolutePath.TrimStart('/')}" +
+        $";Username={userInfo[0]};Password={Uri.UnescapeDataString(userInfo[1])}" +
+        $";SSL Mode=Require;Trust Server Certificate=true";
+}
+
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddSignalR();
 builder.Services.AddOpenApi();
@@ -78,6 +95,8 @@ if (app.Environment.IsDevelopment())
 app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapGet("/health", () => Results.Ok(new { status = "healthy", timestamp = DateTime.UtcNow }));
 
 app.MapAuthEndpoints();
 app.MapPlaybookEndpoints();

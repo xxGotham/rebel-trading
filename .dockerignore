@@ -1,0 +1,9 @@
+mobile/
+frontend/
+**/node_modules/
+**/bin/
+**/obj/
+**/.git/
+**/.env*
+backend/tests/
+*.md
