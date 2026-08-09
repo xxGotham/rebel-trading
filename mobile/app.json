@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Rebel Trading",
+    "slug": "rebel-trading",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "rebel",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0A0F",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.rebeltrading.mobile",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Rebel uses your microphone so you can ask questions by voice while trading.",
+        "NSSpeechRecognitionUsageDescription": "Rebel uses speech recognition to understand your voice questions."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0A0A0F"
+      },
+      "package": "com.rebeltrading.mobile",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Rebel uses your microphone so you can ask questions by voice while trading."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

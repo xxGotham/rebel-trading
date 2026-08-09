@@ -47,3 +47,114 @@ public enum PaperPositionStatus
     Open = 0,
     Closed = 1
 }
+
+// ---- Coaching / live-session enums ----
+
+public enum AssetClass
+{
+    Stocks,
+    Futures
+}
+
+public enum SubscriptionPlan
+{
+    FounderBeta,
+    Free,
+    Pro,
+    Premium
+}
+
+public enum EntitlementType
+{
+    LiveCoaching,
+    VoiceCoaching,
+    MaxPlaybooks,
+    SessionHistory,
+    AdvancedJournaling,
+    MultipleBrokerConnections,
+    MultipleMarketDataProviders,
+    MultipleAIProviders,
+    AdvancedAnalytics
+}
+
+public enum ProviderType
+{
+    Broker,
+    MarketData,
+    AI,
+    Voice
+}
+
+public enum KeySource
+{
+    RebelManaged,
+    UserManagedByok
+}
+
+public enum ProviderStatus
+{
+    Connected,
+    Disconnected,
+    Connecting,
+    Error
+}
+
+public enum SessionStatus
+{
+    Idle,
+    Starting,
+    Active,
+    Paused,
+    Ending,
+    Ended
+}
+
+public enum OrderSide
+{
+    Buy,
+    Sell
+}
+
+public enum OrderType
+{
+    Market,
+    Limit,
+    Stop,
+    StopLimit
+}
+
+public enum OrderStatus
+{
+    Pending,
+    Filled,
+    Cancelled,
+    Rejected
+}
+
+public enum PositionSide
+{
+    Long,
+    Short
+}
+
+public enum TradingEventType
+{
+    PositionOpened,
+    PositionClosed,
+    OrderCreated,
+    OrderChanged,
+    StopChanged,
+    TargetChanged,
+    EntryConditionMet,
+    EntryConditionInvalidated,
+    StopThresholdReached,
+    ProfitTargetApproaching,
+    PlaybookRuleTriggered,
+    PlaybookRuleViolated,
+    MaxDailyLossReached,
+    MaxTradeCountReached,
+    VolatilityChanged,
+    PositionRiskChanged,
+    MarketSessionOpened,
+    MarketSessionClosed
+}

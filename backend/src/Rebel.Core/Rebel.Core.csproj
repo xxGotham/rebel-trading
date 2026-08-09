@@ -1,9 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <!--
-    Rebel.Core has NO external dependencies on purpose.
-    Indicators, scoring and trade-plan math must be reusable by a future
-    backtester without dragging EF Core, HTTP clients or hosting along.
-  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- No external packages — pure domain -->
+  </PropertyGroup>
 
 </Project>
